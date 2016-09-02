@@ -3,15 +3,17 @@
 
 **Let me show you how to set fish for coding environment on your OS X.**
 
-* Install Homebrew
-* Install iTerm2
-* Install Git
-* Install nvm & npm
-* Install fish
-  * Install   
-  * Setting your fish
-* Install fisherman
-  * Solution of you can't find npm command in fish.
+* [Install Homebrew](#install-homebrew)
+* [Install iTerm2](#install-iterm2)
+* [Install Git](#install-git)
+* [Install nvm & npm](#install-nvm--npm)
+* [Install fish](#install-fish)
+  * [Install](#install)
+  * [Setting your fish](#setting-your-fish)
+* [Install fisherman](#install-fisherman)
+  * [Solution of you can't find npm command in fish.](#solution-of-you-cant-find-npm-command-in-fish)
+  * [Recommand git status plungin](#recommand-git-status-plungin)
+* [Reference](#reference)
 
 ## Install Homebrew
 > The missing package manager for OS X.
@@ -122,14 +124,23 @@ For example, I want to install [RED SNAPPER](https://github.com/oh-my-fish/theme
 $ fisher oh-my-fish/theme-red-snapper
 ```
 
-
-
 ### Solution of you can't find npm command in fish.
 > You need to let fish know what is npm, and you should use fisherman plungin for this problem.
 
 ```
 $ fisher nvm
 ```
+
+### Recommand git status plungin
+> You can see your git-status of current folder directly.
+
+It's totally fish symbol in this plungin. Very funny and interesting!
+
+```
+$ fisher oh-my-fish/theme-red-snapper
+```
+
+> That's all this wrap, and Hope you will like it. Enjoy!
 
 ## Reference
 1. [Homebrew](http://brew.sh/index.html)
