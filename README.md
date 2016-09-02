@@ -1,8 +1,31 @@
 # Awosome Fish
 > A awosome Bash Shell on OS X.
 
+**Let me show you how to set fish for coding environment on your OS X.**
+
+* Install Homebrew
+* Install iTerm2
+* Install Git
+* Install nvm & npm
+* Install fish
+  * Install   
+  * Setting your fish
+* Install fisherman
+  * Solution of you can't find npm command in fish.
+
 ## Install Homebrew
 > The missing package manager for OS X.
+
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+## Install iTerm2
+> iTerm2 is a terminal emulator for OS X that does amazing things.
+
+Just go [here](https://www.iterm2.com/downloads.html) for download.
+
+> After Intallation, you can replace your terminal emulator from default to iTerm2.
 
 ## Install Git
 > fast-version-control management.
@@ -24,27 +47,31 @@ And you can get nvm command to install node.js
 $ nvm ls-remote
 ```
 
-> list all node.js version you can install.
+> :ist all node.js version you can install.
 
 ```
 $ nvm install <version>
 ```
-> install node.js version you choose. After installation, you also have npm command now!
+> Install node.js version you choose. After installation, you also have npm command now!
 
 ## Install fish
-> fish is a smart and user-friendly command line shell for OS X, Linux, and the rest of the family.
+> Fish is a smart and user-friendly command line shell for OS X, Linux, and the rest of the family.
+
+### Install
+
+Step.1 Brew install fish
 
 ```
 $ brew install fish
 ```
 
-Add fish to your shell list.
+Step.2 Add fish to your shell list.
 
 ```
 $ echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 ```
 
-Set fish as your default shell.
+Step.3 Set fish as your default shell.
 
 ```
 $ chsh -s /usr/local/bin/fish
@@ -52,30 +79,29 @@ $ chsh -s /usr/local/bin/fish
 
 ### Setting your fish
 
-create fish config folder.
+Step.1 Create fish config folder.
 
 ```
 $ mkdir -p ~/.config/fish
 ```
 
-create fish config file.
+Step.2 Create fish config file.
 
 ```
 $ vim ~/.config/fish/config.fish
 ```
 
-add one line command in this file.
+Step.3 Add one line command in this file.
 
 ```
 set -g -x PATH /usr/local/bin $PATH
 ```
 
-save this file and restart your shell. You will see fish.
+Step.4 Save this file and restart your shell. You will see fish. Command "fish_config", and you can setting fish on browser.
 
 ```
 $ fish_config
 ```
-> you can setting fish on browser.
 
 ## Install fisherman
 > A plugin manager for fish.
@@ -87,11 +113,19 @@ $ curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
 And you will get the install plungin command 
 
 ```
-$ fisher mono
+$ fisher <owner/git-repository-name>
 ```
 
-## Solution of you can't find npm command in fish.
-> you need to let fish know what is npm, and you should use fisherman plungin for this problem.
+For example, I want to install [RED SNAPPER](https://github.com/oh-my-fish/theme-red-snapper), and I should command like this.
+
+```
+$ fisher oh-my-fish/theme-red-snapper
+```
+
+
+
+### Solution of you can't find npm command in fish.
+> You need to let fish know what is npm, and you should use fisherman plungin for this problem.
 
 ```
 $ fisher nvm
@@ -99,6 +133,7 @@ $ fisher nvm
 
 ## Reference
 1. [Homebrew](http://brew.sh/index.html)
+2. [iTerm2](https://www.iterm2.com/)
 2. [fish](https://fishshell.com/)
 3. [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
 4. [fisherman](http://fisherman.sh/)
