@@ -134,6 +134,8 @@ $ fisher nvm
 ### Recommand git status plungin
 > You can see your git-status of current folder directly.
 
+**[RED SNAPPER](https://github.com/oh-my-fish/theme-red-snapper)**
+
 It's totally fish symbol in this plungin. Very funny and interesting!
 
 ```
