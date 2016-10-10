@@ -49,7 +49,7 @@ And you can get nvm command to install node.js
 $ nvm ls-remote
 ```
 
-> :ist all node.js version you can install.
+> list all node.js version you can install.
 
 ```
 $ nvm install <version>
